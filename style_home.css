@@ -33,7 +33,7 @@ header img{
     text-decoration-line: none;
 }
 .viewMiddle {
-    background-image: url("src/background.jpg");
+    background-image: url("background.jpg");
     background-size: cover;
     color: white;
     font-size: 50px;
