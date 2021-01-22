@@ -1,0 +1,101 @@
+.whereiam {
+    clear: both;
+    margin: 0 auto;
+    padding: 8px 0;
+    color: #6e6e6e;
+    font-size: 16px;
+}
+.main {
+    clear: both;
+    height: 1080px;
+    margin: 0 auto;
+}
+.mainContact {
+    border-top: 2px solid darkgray;
+    
+    box-sizing: border-box;
+    width: 770px;
+    height: 270px;
+    margin-bottom: 10px;
+    float: left;
+    font-size: 30px;
+}
+.mainContactText {
+    margin-top: 210px;
+    margin-left: 10px;
+}
+.mainContactMail {
+    border-bottom: 2px solid darkgray;
+    
+    box-sizing: border-box;
+    width: 770px;
+    height: 270px;
+    float: left;
+    text-align: center;
+    font-size: 40px;
+}
+.mainContactMailAdd {
+    background-color: darkgray;
+    color: white;
+}
+.mainContactLogo {
+    background-color: darkgray;
+    border: 2px solid darkgray;
+    box-sizing: border-box;
+    width: 300px;
+    height: 550px;
+    float: right;
+}
+.mainContactLogo img {
+    display: block;
+    margin: 175px auto;
+}
+.mainAboutT {
+    box-sizing: border-box;
+    height: 100px;
+    background-image: url("background.jpg");
+    background-size: cover;
+}
+.mainAboutTT {
+    box-sizing: border-box;
+    color: white;
+    
+}
+.main_service {
+    background-image: url("background.jpg");
+    background-size: cover;
+    height: 200px;
+}
+#main_service_text {
+    box-sizing: border-box;
+    height: 72px;
+    width: 100vw;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 74px 0;
+}
+.cloit_img {
+    float: left;
+    background-color: skyblue;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    margin: 50px;
+}
+.cloit_imgtext {
+    box-sizing: border-box;
+    color: white;
+    font-size: 75px;
+    height: 75px;
+    padding: 37.5px 0;
+}
+.cloit_title {
+    box-sizing: border-box;
+    height: 150px;
+    padding: 50px 0;
+    font-size: 20px;
+}
+.cloit_subtitle {
+    font-size: 12px;
+}
