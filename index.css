@@ -25,7 +25,7 @@ header {
     margin: 0 auto;
     text-align: center;
 }
-.logoArea {
+.logo {
     float: left;
     margin: 0;
 }
@@ -33,7 +33,7 @@ header {
     display: block;
     overflow: hidden;
 }
-.logo {
+.logoText {
     font-size: 20px;
     height: 20px;
     margin: 20px 0;
