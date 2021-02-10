@@ -4,93 +4,64 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="index.css">
-    <script src="https://kit.fontawesome.com/2ad34ccf72.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/index.css">
+    <script src="https://kit.fontawesome.com/c9c06d021f.js" crossorigin="anonymous"></script>
+    <script src="src/index.js" defer></script>
     <title>UNKNOWNSTAR</title>
 </head>
 
 <body>
-    <div id="webMain">
-        <header>
-            <div id="headerBar">
-                <div class="gnb">
-                    <h1 class="logo">
-                        <a href="index.html" id="logoLink">
-                            <span class="logoText">UNKNOWNSTAR</span>
-                        </a>
-                    </h1>
-                    <nav class="navi">
-                        <ul class="naviList">
-                            <li>
-                                <a href="index.html">언노운스타</a>
-                            </li>
-                            <li>
-                                <a onclick="alert('준비중입니다.')" id="unprepared">서비스</a>
-                            </li>
-                            <li>
-                                <a onclick="alert('준비중입니다.')" id="unprepared">문의</a>
-                            </li>
-                            <li>
-                                <a onclick="alert('준비중입니다.')" id="unprepared">고객지원</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="lang">
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a onclick="alert('준비중입니다.')" id="unprepared">KOR</a>
-                                </li>
-                                <li>
-                                    <a onclick="alert('준비중입니다.')" id="unprepared">ENG</a>
-                                </li>
-                            </ul>
-                        </nav>
+    <header>
+        <div id="gnb">
+            <div class="logo">
+                <a href="index.html">UNKNOWNSTAR</a>
+            </div>
+
+            <nav class="nav">
+                <ul class="navBar">
+                    <li class="navList"><a href="index.html">언노운스타</a></li>
+                    <li class="navList"><a id="unprepared" onclick="alert('준비중입니다.')">서비스</a></li>
+                    <li class="navList"><a id="unprepared" onclick="alert('준비중입니다.')">소식</a></li>
+                    <li class="navList"><a id="unprepared" onclick="alert('준비중입니다.')">문의</a></li>
+                </ul>
+            </nav>
+
+            <div class="lang">
+                <ul class="langBar">
+                    <li class="langList" id="unprepared" onclick="alert('준비중입니다.')">KOR</li>
+                    <li class="langList" id="unprepared" onclick="alert('준비중입니다.')">ENG</li>
+                </ul>
+            </div>
+
+            <a href="#" class="menuBtn">
+                <i class="fas fa-bars"></i>
+            </a>
+
+        </div>
+    </header>
+    <section>
+        <div id="home">
+            <div class="ustSlogan">
+                UNKNOWNSTAR는<br>보이지않는 곳에서<br>더 편한 세상을 만듭니다.
+            </div>
+            <div class="gifArea">
+                <div class="gif">
+                    <div style="width:100%;height:0;padding-bottom:75%;position:relative;">
+                        <iframe src="https://giphy.com/embed/UYBDCJjwOd9Re" width="100%" height="100%"
+                            style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
                     </div>
                 </div>
-            </div>
-            <div class="noticeBar">
-                <div class="notice">
-                    <i class="fas fa-volume-up"></i><span> 모바일버전은 준비중입니다.. 데스크탑으로 이용해주세요!</span>
+                <div class="gifSrc">
+                    <a href="https://giphy.com/gifs/stars-UYBDCJjwOd9Re">Image by <u>via GIPHY</u></a>
                 </div>
             </div>
-        </header>
-        <section>
-            <div id="home">
-                <div class="ustSlogan">
-                    UNKNOWNSTAR는<br>보이지않는 곳에서<br>더 편한 세상을 만듭니다.
-                </div>
-                <div class="gifArea">
-                    <div class="gif">
-                        <div style="width:100%;height:0;padding-bottom:75%;position:relative;">
-                            <iframe src="https://giphy.com/embed/UYBDCJjwOd9Re" width="100%" height="100%"
-                                style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-                        </div>
-                    </div>
-                    <div class="gifSrc">
-                        <a href="https://giphy.com/gifs/stars-UYBDCJjwOd9Re">Image by <u>via GIPHY</u></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <div id="footArea">
-                <div class="info">
-                    <h1 class="infoLogo">
-                        <span class="infoName">UNKNOWNSTAR</span>
-                    </h1>
-                    <address>
-                        <a class="email" href="mailto:admin@unknownstar.co.kr">문의하기</a>
-                    </address>
-                </div>
-                <div class="copyright">
-                    <div class="copyrightText">
-                        © 2020-2021. <a href="https://unknownstar.co.kr">UNKNOWNSTAR.co.kr</a>. All rights reserved.
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+        </div>
+    </section>
+    <footer>
+        <div class="copyright">
+            © 2020-2021. UNKNOWNSTAR. All rights reserved.
+        </div>
+    </footer>
 </body>
 
 </html>

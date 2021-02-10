@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+/* 기본 */ 
+body {
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f0f4f5;
+    color: #151515;
+}
+ul, ol, li {
+    list-style: none;
+}
+a {
+    text-decoration-line: none;
+    color: inherit;
+}
+
+/* 헤더 */
+header {
+    position: sticky;
+    top: 0;
+    border: 1px solid #e5e5e5;
+    background-color: #f0f4f5;
+    z-index: 100;
+}
+#gnb {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+}
+.logo {
+    padding: 18px 0;
+}
+.navBar {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.navList {
+    padding: 16px 0;
+    margin: 0 16px;
+}
+.navList:hover {
+    border-bottom: 2px solid black;
+}
+.langBar {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.langList {
+    padding: 16px 0;
+    margin: 0 16px;
+}
+.langList:hover {
+    border-bottom: 2px solid black;
+}
+.menuBtn {
+    display: none;
+    position: absolute;
+    right: 24px;
+    top: 6px;
+    font-size: 30px;
+    color: black;
+}
+#unprepared {
+    color: gray;
+}
+
+/* 섹션 */
+section {
+    top: 65px;
+    box-sizing: border-box;
+}
+#home {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.ustSlogan {
+    font-size: 32px;
+    padding: 0 10px;
+}
+.giphy-embed {
+    pointer-events: none;
+    cursor: default;
+}
+.gifSrc {
+    height: 20px;
+}
+.gifSrc a {
+    display: block;
+    text-align: right;
+    font-size: 10px;
+    color: silver;
+}
+footer {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+}
+.copyright {
+    color: gray;
+    font-size: 12px;
+    margin: 7px 0;
+}
+.copyright a {
+    color: gray;
+}
+
+@media screen and (max-width:1024px) {
+    #gnb {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+    .nav {
+        display: none;
+        width: 100%;
+        background-color: #e5e5e5;
+    }
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navList {
+        width: 100%;
+        text-align: center;
+    }
+    .navList:hover {
+        color: #f0f4f5;
+        background-color: black;
+    }
+    .lang {
+        display: none;
+    }
+    .menuBtn {
+        display: block;
+    }
+    .nav.active {
+        display: flex;
+    }
+}

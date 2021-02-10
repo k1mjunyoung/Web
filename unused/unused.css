@@ -37,7 +37,7 @@
 }
 .mainContactMailAdd {
     background-color: darkgray;
-    color: white;
+    color: #f0f4f5;
 }
 .mainContactLogo {
     background-color: darkgray;
@@ -59,7 +59,7 @@
 }
 .mainAboutTT {
     box-sizing: border-box;
-    color: white;
+    color: #f0f4f5;
     
 }
 .main_service {
@@ -71,7 +71,7 @@
     box-sizing: border-box;
     height: 72px;
     width: 100vw;
-    color: white;
+    color: #f0f4f5;
     font-size: 20px;
     text-align: center;
     padding: 74px 0;
@@ -86,7 +86,7 @@
 }
 .cloit_imgtext {
     box-sizing: border-box;
-    color: white;
+    color: #f0f4f5;
     font-size: 75px;
     height: 75px;
     padding: 37.5px 0;
