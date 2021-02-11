@@ -4,7 +4,7 @@
 body {
     margin: 0;
     font-family: 'Noto Sans KR', sans-serif;
-    background-color: #f0f4f5;
+    background-color: rgb(255, 255, 255);
     color: #151515;
 }
 ul, ol, li {
@@ -20,7 +20,7 @@ header {
     position: sticky;
     top: 0;
     border: 1px solid #e5e5e5;
-    background-color: #f0f4f5;
+    background-color: rgb(255, 255, 255);
     z-index: 100;
 }
 #gnb {
@@ -44,7 +44,7 @@ header {
     margin: 0 16px;
 }
 .navList:hover {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #151515;
 }
 .langBar {
     display: flex;
@@ -56,7 +56,7 @@ header {
     margin: 0 16px;
 }
 .langList:hover {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #151515;
 }
 .menuBtn {
     display: none;
@@ -136,7 +136,7 @@ footer {
     }
     .navList:hover {
         color: #f0f4f5;
-        background-color: black;
+        background-color: #151515;
     }
     .lang {
         display: none;
