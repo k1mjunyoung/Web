@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+
 
 /* 기본 */ 
 body {
@@ -20,8 +22,9 @@ a {
 /* 헤더 */
 header {
     position: sticky;
+    height: 60px;
     top: 0;
-    border: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
     background-color: rgb(255, 255, 255);
     z-index: 100;
 }
@@ -34,11 +37,12 @@ header {
     padding: 0px 16px;
 }
 .logo {
-    padding: 17px 0;
+    padding: 17.5px 0;
 }
 .logo a {
-    font-size: 20px;
-    font-family: 'Ubuntu Mono';
+    font-size: 22px;
+    font-family: 'Megrim';
+    font-weight: bold;
 }
 .navBar {
     display: flex;
@@ -46,7 +50,7 @@ header {
     margin: 0;
 }
 .navList {
-    padding: 16px 0;
+    padding: 17px 0;
     margin: 0 16px;
 }
 .navList:hover {
@@ -59,7 +63,7 @@ header {
 }
 .langList {
     padding: 16px 0;
-    margin: 0 16px;
+    margin: 0 8px;
 }
 .langList:hover {
     border-bottom: 2px solid #151515;
@@ -79,40 +83,68 @@ header {
 /* 섹션 */
 section {
     top: 60px;
+    background-color: #f0f4f5;
 }
-.indexMain {
+.indexBar {
     width: 100%;
 }
-#mainPic {
-    box-sizing: border-box;
-    width: 800px;
-    height: 400px;
-    background-image: url('src/space.jpg');
-    background-size: cover;
-}
-.mainText {
+#indexBarPic {
     box-sizing: border-box;
     width: 100%;
     height: 200px;
+    background-image: url('../src/space.jpg');
+    background-size: cover;
+}
+.indexBarText {
+    margin: 0;
+    padding: 60px 0;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+.indexContent {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.indexContentBox {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+.indexContentBoxAns {
+    font-weight: lighter;
 }
 /* 푸터 */
 footer {
-    width: 100%;
-    height: 30px;
-    text-align: center;
+    max-width: 1024px;
+    margin: 0 auto;
+    color: #808B96;
     border-top: 1px solid #e5e5e5;
 }
-.copyright {
-    color: gray;
+footer p {
     font-size: 12px;
-    margin: 7px 0;
 }
-.copyright a {
-    color: gray;
+.footerArea {
+    margin: 20px;
+}
+.footerBar {
+    display: flex;
+    justify-content: space-between;
+}
+.footerLogo {
+    font-family: "Megrim";
 }
 
+/* 모바일 쿼리*/
 @media screen and (max-width:1024px) {
     #gnb {
+        width: 100%;
+        padding: 0;
         flex-direction: column;
         align-items: flex-start;
     }
@@ -121,9 +153,9 @@ footer {
         text-align: center;
     }
     .nav {
-        display: none;
         width: 100%;
-        background-color: #e5e5e5;
+        display: none;
+        background-color: rgb(255, 255, 255);
     }
     .navBar {
         flex-direction: column;
@@ -132,6 +164,7 @@ footer {
     }
     .navList {
         width: 100%;
+        color: #151515;
         text-align: center;
     }
     .navList:hover {
@@ -146,5 +179,8 @@ footer {
     }
     .nav.active {
         display: flex;
+    }
+    .footerBar {
+        flex-direction: column;
     }
 }
