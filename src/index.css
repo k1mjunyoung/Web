@@ -84,18 +84,42 @@ header {
 section {
     top: 60px;
     background-color: #f0f4f5;
+    border-bottom: 1px solid #e5e5e5;
 }
-.indexBar {
+.indexMain {
     width: 100%;
 }
-#indexBarPic {
+.indexMainVideo {
+    width: 100%;
+    background-image: url("../src/space.jpg");
+    background-size: cover;
+}
+.indexMainText {
+    display: block;
+    position: absolute;
+    top: 3em;
+    margin: 0 3em;
+    font-size: 3em;
+}
+.indexMainText p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.mobMain {
+    display: none;
+}
+/* 어바웃섹션 */
+.aboutBar {
+    width: 100%;
+}
+#aboutBarPic {
     box-sizing: border-box;
     width: 100%;
     height: 200px;
     background-image: url('../src/space.jpg');
     background-size: cover;
 }
-.indexBarText {
+.aboutBarText {
     margin: 0;
     padding: 60px 0;
     font-size: 28px;
@@ -104,27 +128,31 @@ section {
     color: rgb(255, 255, 255);
     width: 100%;
 }
-.indexContent {
+.aboutContent {
     max-width: 1080px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
-.indexContentBox {
+.aboutContentBox {
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
-    margin: 20px;
+    margin: 20px 20px 10px 20px;
     padding: 20px;
 }
-.indexContentBoxAns {
+.aboutContentBoxAns {
     font-weight: lighter;
+}
+#bulb {
+    height: 1000px;
+    background-image: url("../src/bulb.jpg");
+    background-size: cover;
 }
 /* 푸터 */
 footer {
     max-width: 1024px;
     margin: 0 auto;
     color: #808B96;
-    border-top: 1px solid #e5e5e5;
 }
 footer p {
     font-size: 12px;
@@ -182,5 +210,31 @@ footer p {
     }
     .footerBar {
         flex-direction: column;
+    }
+
+    .indexMain {
+        display: none;
+    }
+    .mobMain {
+        display: block;
+        width: 100%;
+    }
+    #mobMainPic {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100vh;
+        background-image: url('../src/space.jpg');
+        background-size: cover;
+    }
+    .mobMainText {
+        margin: 0;
+        padding: 50% 0;
+        font-size: 2.5rem;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        width: 100%;
+    }
+    #bulb {
+        height: 450px;
     }
 }
